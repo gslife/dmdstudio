@@ -229,9 +229,14 @@ main.grid a::before {
     content: "";
     background-size: cover;
     width: 100%;
-    height: 80px;
+    height: 0;
     display: block;
-    padding-top: 56.25%;
+    padding-top: 100%;
+    transition: background-position 0.4s ease-in-out;
+}
+
+main.grid a:hover::before {
+    background-position: bottom center;
 }
 
 main a.alyssa::before {
@@ -385,8 +390,12 @@ section.student img {
 }
 
 @media (max-width: 800px) {
-    main {
+    main.grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    main.grid h2 {
+        font-size: 2rem;
     }
 
     body {
