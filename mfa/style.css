@@ -200,11 +200,8 @@ section.intro {
     font-size: 1.4rem;
 }
 
-section.intro h1 {
-    font-family: 'Metal Mania';
-    color: red;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+section.intro img {
+    max-width: 500px;
 }
 
 main {
