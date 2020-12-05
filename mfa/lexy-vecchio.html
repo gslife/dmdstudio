@@ -7,6 +7,33 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <style>
+        section.student { gap: 4rem; }
+    .embed-wrapper {
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        margin-top: 1em;
+    }
+
+    .embed-wrapper iframe {
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .three-column { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    section.student .three-column img {
+        grid-area: unset; left: 0;
+    }
+    @media (max-width: 500px) {
+        .three-column {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
 </head>
 
 <body>
@@ -18,29 +45,17 @@
                 <h1>Lexy Vecchio</h1>
             </div>
             <div class="content">
-                <style>
-                .embed-wrapper {
-                    overflow: hidden;
-                    padding-top: 56.25%;
-                    position: relative;
-                    margin-bottom: 1em;
-                }
-
-                .embed-wrapper iframe {
-                    border: 0;
-                    height: 100%;
-                    left: 0;
-                    position: absolute;
-                    top: 0;
-                    width: 100%;
-                }
-                </style>
-                <div class="embed-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/BwAnSnvtkeg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <p>Lexy worked on solidifying her thesis project idea. Using her own experience with PTSD as a guide, Lexy will be exploring the topic through a VR escape room game that will allow players without PTSD to experience what it is like using the concept of looping. This looping mechanic will occur on several levels, with various actions, moments and sets to occur over and over with minor changes to give the player the feeling of unease, danger and disorientation. Although only just into the concept phase, Lexy's next steps are to break down what elements of PTSD she would like to include, and the next semester will focus on putting together a Onesheet, game bible, and concept art. </p>
                 <h2>What I've been Working On</h2>
+                <div class="embed-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/BwAnSnvtkeg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 <p>This semester Lexy has focused on learning the foundations of game design, both from a psychological perspective, considering how games affect those who play them, and from a technical one. The majority of her creative studio work this semester comes in the form of a 2D side scrolling game, <em>Epiphany</em>, which she spent the second half of the semester working on with her development partner, Brandon Mello. The game, which has gone through several stages of development and can be played here:</p>
                 <a href="https://github.uconn.edu/pages/summerstarhuntress/Epiphany-2020/" class="button">Play Ephiphany &raquo;</a>
                 <p>In addition to creating all art assets from the game, Lexy also was able to create some of the mechanics of the game and learn different aspects of Unity's software, including animation, Level creation, Masking, and an introduction to the 3D side of the program. </p>
-                <p>In addition to learning these programs, Lexy also worked on solidifying her thesis project idea. Using her own experience with PTSD as a guide, Lexy will be exploring the topic through a VR escape room game that will allow players without PTSD to experience what it is like using the concept of looping. This looping mechanic will occur on several levels, with various actions, moments and sets to occur over and over with minor changes to give the player the feeling of unease, danger and disorientation. Although only just into the concept phase, Lexy's next steps are to break down what elements of PTSD she would like to include, and the next semester will focus on putting together a Onesheet, game bible, and concept art. </p>
+                <div class="three-column">
+                    <img src="images/lexy-ex0.gif" align="climbing animation skeleton rough">
+                    <img src="images/lexy-ex1.gif" align="climbing animation character rough">
+                    <img src="images/lexy-ex2.gif" align="climbing animation final">
+                </div>
             </div>
             <a href="https://drive.google.com/drive/u/1/folders/1ZkhNkZ681rdxsIbb9Q7EfuKcm4Lh_27S" class="button">See all work here &raquo;</a>
             <div class="bio-statement">
