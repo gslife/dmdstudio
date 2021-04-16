@@ -215,7 +215,8 @@ main.grid a {
     display: block;
     color: #222;
     text-decoration: none;
-    transition: color 0.3s ease-in
+    transition: color 0.3s ease-in;
+    overflow: hidden;
 }
 
 main.grid a::before {
@@ -225,15 +226,31 @@ main.grid a::before {
     height: 0;
     display: block;
     padding-top: calc(100% - 1px);
-    transition: background-position 0.4s ease-in-out
+    transition: transform 1.4s ease-in 0.5s;
 }
 
 main.grid a:hover::before {
-    background-position: bottom center
+    transform: translateY(-100%);
 }
 
+main.grid > div {
+    position: relative;
+}
 
-/* main a.alyssa::before {
+main.grid > div::before {
+    content: "🛸";
+    position: absolute;
+    font-size: 90px;
+    transform: translate(100%, -100%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+main.grid > div:hover::before {
+    opacity: 1;
+}
+
+main a.alyssa::before {
     background-image: url("images/alyssa.jpg")
 }
 
@@ -251,7 +268,7 @@ main a.lexy::before {
 
 main a.matt::before {
     background-image: url("images/matt.jpg")
-} */
+}
 
 main.grid a:hover {
     color: #ccc
