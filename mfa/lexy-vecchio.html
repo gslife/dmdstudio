@@ -6,30 +6,13 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
     <style>
-        section.student { gap: 4rem; }
-    .embed-wrapper {
-        overflow: hidden;
-        padding-top: 56.25%;
-        position: relative;
-        margin-top: 1em;
-    }
-
-    .embed-wrapper iframe {
-        border: 0;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-    .three-column { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-    section.student .three-column img {
+    .two-column { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    section.student .two-column img {
         grid-area: unset; left: 0;
     }
     @media (max-width: 500px) {
-        .three-column {
+        .two-column {
             grid-template-columns: 1fr;
         }
     }
@@ -45,27 +28,35 @@
                 <h1>Lexy Vecchio</h1>
             </div>
             <div class="content">
-                <p>Lexy worked on solidifying her thesis project idea. Using her own experience with PTSD as a guide, Lexy will be exploring the topic through a VR escape room game that will allow players without PTSD to experience what it is like using the concept of looping. This looping mechanic will occur on several levels, with various actions, moments and sets to occur over and over with minor changes to give the player the feeling of unease, danger and disorientation. Although only just into the concept phase, Lexy's next steps are to break down what elements of PTSD she would like to include, and the next semester will focus on putting together a Onesheet, game bible, and concept art. </p>
-                <h2>What I've been Working On</h2>
-                <div class="embed-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/BwAnSnvtkeg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                <p>This semester Lexy has focused on learning the foundations of game design, both from a psychological perspective, considering how games affect those who play them, and from a technical one. The majority of her creative studio work this semester comes in the form of a 2D side scrolling game, <em>Epiphany</em>, which she spent the second half of the semester working on with her development partner, Brandon Mello. The game, which has gone through several stages of development and can be played here:</p>
-                <a href="https://github.uconn.edu/pages/summerstarhuntress/Epiphany-2020/" class="button">Play Ephiphany &raquo;</a>
-                <p>In addition to creating all art assets from the game, Lexy also was able to create some of the mechanics of the game and learn different aspects of Unity's software, including animation, Level creation, Masking, and an introduction to the 3D side of the program. </p>
-                <div class="three-column">
-                    <img src="images/lexy-ex0.gif" align="climbing animation skeleton rough">
-                    <img src="images/lexy-ex1.gif" align="climbing animation character rough">
-                    <img src="images/lexy-ex2.gif" align="climbing animation final">
+                <div class="two-column">
+                    <img src="images/lexy-hallcaveconcept.jpg" align="Concept">
+                    <img src="images/lexy-LandscapeConcept.jpg" align="climbing animation character rough">
                 </div>
+                <p>PTSDemo is the story of young woman, Sam, who lives with the repercussions of a traumatic spelunking accident in her teen years. The game, intended to be played in VR, does not show the original accident but uses the liminal setting of caves to have the player go through Sam’s experience when having a dissociative PTSD episode.</p> 
+                <p>When a thunderstorm triggers Sam’s PTSD she explores the labyrinth of her mind through an out of body experience that brings her back into the cave system that caused her trauma ten years ago. Guided by a phantom voice from her phone, Austin, she explores looping actions, events, and spaces, all the while trying to keep from confronting the ghosts of the past. </p>
+                <p>Through the narrative, the player will experience what it is like, to stay in a cyclical event while uncovering the past that Sam has tried hard to put behind her. </p>
+
+                <h2>CHARACTERS</h2>
+                <p><strong>Sam</strong>: Player character. Gender F. Current Age 27. When she was 17 Sam was in a serious spelunking accident which trapped her in a limestone cavern for two days. The cave in, which also killed her friend, Austin, left her with Simple Post-Traumatic Stress Disorder and survivor’s guilt. When she becomes alone or isolated she can experience post traumatic stress episodes which result in looping behaviors, time dilation, and fixation. While she does not hallucinate, she does occasionally experience dissociative episodes where she turns interior and gets stuck in looping thoughts about her time in a cave system and all the ways she could have gotten out or died. In reality, she did not travel very far from the original cave-in, and was found after two days when a passing hiker heard her cries for help through a ventilation shaft. She is aware of everything that happened but pushes the darker aspects to the back of her head. When surrounded by other people she will talk openly about her experience because, except under rare circumstances, she must be alone to be triggered. </p>
+
+                <p><strong>Austin</strong>: Guide and voice on the phone. Gender - Written M, but could be any. Deceased. In-game, he acts as both an internal guide and the person Sam talks with throughout the episode. He died when he was 17. He was among the three friends with Sam when they went spelunking in a cave system in Eastern Pennsylvania. He texted Sam the message which caused her to drop her phone. He was the only one of Sam’s friends who heard her phone fall so he went back to check on her. When the area he and Sam were standing on caved in, he was trapped beneath a boulder, the rest of him crushed beneath it. He and Sam were both aware that he was not going to make it, but he was her companion for the time they spent in the cave. Throughout the VR experience he will talk with the player.</p>
+
+                <h2>PRODUCTION</h2>
+                <p>PTSDemo will finish up the preproduction phase through the summer and next fall. While not a game intended to help those who suffer from PTSD as a therapy option, the goal is to humanize the experience of Post Traumatic Stress Disorder for those who do not suffer from it, and to validate the experience of those who do. </p>
+                <p>I intend for the game to have both extensive trigger warnings throughout as well as resources for those who may need them. Additionally, I want to look into making a pre-care and after-care element for those who want to play the game, if necessary. </p>
+                <p>All suggestions are welcome! </p>
+                <p>For a more in depth look at the Story Outline and concept art, please follow the link at the top of the page!</p>
+
             </div>
-            <a href="https://drive.google.com/drive/u/1/folders/1ZkhNkZ681rdxsIbb9Q7EfuKcm4Lh_27S" class="button">See all work here &raquo;</a>
+            <a href="https://drive.google.com/drive/folders/1a79i8Xm30h7W4QQk6ZtvtiQwEOcWOHZ3?usp=sharing" class="button">See all work here &raquo;</a>
             <div class="bio-statement">
                 <h2>Artist Biography</h2>
                 <p>Lexy Vecchio is a game developer, filmmaker and artistic director. After earning her BA in Film from Muhlenberg College in 2015, Lexy worked in a variety of roles in the entertainment and technology industry. Through her work she fell in love with world-building through the process of conceptualizing and fabrication. Lexy sought to find a way to combine her passions of digital media with world building and design, and landed on games as the perfect interactive media for her work. Lexy made her film directorial debut with the short film, <em>Curbside Waltz</em> (2017), which examines two children's perspectives on their parent's drug abuse.</p>
-                <p>In the fall of 2020, Lexy started as an Master of Fine Arts Candidate and took a position as a graduate assistant with both the Krenicki Institute and as a teaching assistant in the film concentration of the Digital Media and Design Department. She will be an instructor of record in the fall of 2021.</p>
+                <p>Lexy started as a Master of Fine Arts Candidate in the Fall of 2020 and plans to complete a 3 year program. She is just finishing up as a research assistant position with the Krenicki Institute’s Materials Library, and will continue working as a TA in the Digital Media & Design department next fall, where she will be teaching as an instructor of record in the film concentration as well.</p>
                 <h2>Artist Statement</h2>
-                <p>What is art, anyway? My rebellion started at an early age: I breezed through the rudimentary concepts of classical art and got praised for work I did not care about but looked classically "artistic." I never wanted to be an artist. There was no challenge in it. No energy. No stories. What I did like drawing was fanart. </p>
-                <p>Characters and worlds of books, television, film and games became familiar subject matter, and their stories held significantly more meaning for me than the still-lives I was being trained to paint in private art lessons. Soon I was developing my own style of amalgamation, one that drew on both western and eastern influences. I learned to create my own characters, and my own stories. Alongside these stories I began to explore different mediums to work in - literature, comics, theater, and, into college, film. </p>
-                <p>When I started applying these skills into my real world jobs, I received a much different reaction than I had from art teachers of my youth. Other people connected with these stories and characters. I realized that rejecting this historically slim notion of who or what was allowed to be artistic is what made my work more interesting - the genre fiction I'd read, the horror movies I'd watched, the games I stayed up playing till midnight. They gave me new tools to think about storytelling through. It's not that I didn't want to be an artist, it was that I had long since learned the conventions and was ready to break them. This is where my art comes from. I want to tell different stories through my work and help my audience live the unknown narrative of the <em>other</em>. Video games, historically, have been looked at with contempt, as a medium that exists solely as frivolous entertainment, despite their unique element of audience agency. Some art critics, such as Jonathan Jones, have said that games can't be art; I intend to make it anyway. </p>
+                <p>After finalizing my Thesis project concept at the end of last fall, I have taken a deep dive into the ways people use iteration and repetition as strategies for life. This ritualistic phenomenon has become a part of most people’s daily lives under the conditions of the pandemic. Wake up, get breakfast, turn on the computer, hold a zoom meeting, then three more - always taking a bathroom break or a stretch or a walk between each one. The way we repeat actions is a way of organizing our lives is exacerbated by conditions such as Post Traumatic Stress Disorder. Through that lens, looping becomes a coping mechanism. In order to prepare for my project, I have been researching the ways in which looping actions manifest themselves in people with Post Traumatic Stress. </p>
+                <p>The game I am making, working-title PTSDemo, intends to visualize these looping actions and dive headfirst into how looping, liminality and the mind relate with each other. Through the fictional Narrative of a twenty something named Sam, we will explore her single-event based trauma from a Spelunking accident that occured in her teens. The real world will transform fluidly into a series of caves as Sam struggles to work through a dissociative episode. The player will see interact both with Sam’s mental landscape and with a mysterious voice on her phone, pushing against facts that she may need to grapple with despite an unwillingness to do so. </p>
+                <p>Finally, this project should leave us with the question: When we know where all actions inevitably lead, why do we restart the loop? Hope? To delay the inevitable? Maybe we subconsciously believe doing so will rewrite our stories to be different than where they wound up. </p>
             </div>
         </section>
     </main>
