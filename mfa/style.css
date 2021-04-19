@@ -238,6 +238,7 @@ main.grid > div {
 }
 
 main.grid > div::before {
+    /* ufo */
     content: "🛸";
     position: absolute;
     font-size: 90px;
@@ -345,6 +346,22 @@ section.student img {
 
 .bio-statement {
     grid-area: text
+}
+
+.alien {
+    font-size: 100px;
+}
+
+.alien:hover {
+    /* animation: wiggle 2.5s infinite; */
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 
 @media (max-width: 1200px) {
