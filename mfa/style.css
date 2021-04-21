@@ -233,11 +233,11 @@ main.grid a:hover::before {
     transform: translateY(-100%);
 }
 
-main.grid > div {
+main.grid>div {
     position: relative;
 }
 
-main.grid > div::before {
+main.grid>div::before {
     /* ufo */
     content: "🛸";
     position: absolute;
@@ -247,28 +247,28 @@ main.grid > div::before {
     transition: opacity 0.5s ease-in;
 }
 
-main.grid > div:hover::before {
+main.grid>div:hover::before {
     opacity: 1;
 }
 
 main a.alyssa::before {
-    background-image: url("images/alyssa.jpg")
+    background-image: url("images/alyssa_r.jpg")
 }
 
 main a.gideon::before {
-    background-image: url("images/gideon.jpg")
+    background-image: url("images/gideon_r.jpg")
 }
 
 main a.lauren::before {
-    background-image: url("images/lauren.jpg")
+    background-image: url("images/lauren_r.jpg")
 }
 
 main a.lexy::before {
-    background-image: url("images/lexy.jpg")
+    background-image: url("images/lexy_r.jpg")
 }
 
 main a.matt::before {
-    background-image: url("images/matt.jpg")
+    background-image: url("images/matt_r.jpg")
 }
 
 main.grid a:hover {
@@ -296,7 +296,16 @@ main h5 {
 
 main img {
     display: block;
-    width: 100%
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease-out 1.75s;
+}
+
+main.grid a:hover img {
+    opacity: 1;
 }
 
 main p {
@@ -355,11 +364,21 @@ section.student img {
 }
 
 @keyframes wiggle {
-    0% { transform: rotate(0deg); }
-   80% { transform: rotate(0deg); }
-   85% { transform: rotate(5deg); }
-   95% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotate(5deg);
+    }
+    95% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @media (max-width: 1200px) {
