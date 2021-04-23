@@ -29,7 +29,8 @@ pre {
 }
 
 a {
-    background-color: transparent
+    background-color: transparent;
+    color: #88ff75;
 }
 
 abbr[title] {
@@ -180,8 +181,13 @@ template {
 }
 
 html {
-    background: rgb(252, 252, 249);
-    color: #222;
+    min-height: 100vh;
+    background-image: url(images/clouds.png), url(images/trees.png);
+    background-repeat: repeat-x, no-repeat;
+    background-size: 100%, 100%;
+    background-position: top center, bottom center;
+    background-color: #2b0f40;
+    color: #6ad37e;
     font-size: 10px
 }
 
@@ -194,10 +200,6 @@ section {
 section.intro {
     text-align: center;
     font-size: 1.4rem
-}
-
-section.intro img {
-    max-width: 500px
 }
 
 main {
@@ -213,7 +215,7 @@ main.grid {
 main.grid a {
     font-size: 1rem;
     display: block;
-    color: #222;
+    color: #88ff75;
     text-decoration: none;
     transition: color 0.3s ease-in;
     overflow: hidden;
@@ -241,7 +243,7 @@ main.grid>div::before {
     /* ufo */
     content: "🛸";
     position: absolute;
-    font-size: 90px;
+    font-size: 40px;
     transform: translate(100%, -100%);
     opacity: 0;
     transition: opacity 0.5s ease-in;
@@ -337,8 +339,8 @@ section.student img {
 
 .button {
     padding: 1.5rem;
-    color: white;
-    background: #BC0F0F;
+    color: #788a3a;
+    background: #D6E895;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.7rem;
@@ -350,7 +352,7 @@ section.student img {
 }
 
 .button:hover {
-    background-color: #e90d0d;
+    background-color: #f1ffbe;
     border-radius: 10px
 }
 
@@ -358,12 +360,9 @@ section.student img {
     grid-area: text
 }
 
-.alien {
-    font-size: 100px;
-}
-
-.alien:hover {
-    /* animation: wiggle 2.5s infinite; */
+img.alien {
+    max-width: 500px;
+    animation: wiggle 6.5s infinite;
 }
 
 @keyframes wiggle {
@@ -407,5 +406,8 @@ section.student img {
     }
     body {
         font-size: 8px
+    }
+    img.alien {
+        max-width: 95vw;
     }
 }
